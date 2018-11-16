@@ -1,0 +1,338 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0px;
+	font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+#navigation a{
+	text-decoration: none;
+  	color: black;
+  	padding-right: 0px;
+  	font-size: 50px;
+  	text-align: center;
+  	font-weight: 500;
+}
+
+#left img {
+	margin-left: 100px;
+	width: 100px;
+}
+
+
+#left a{
+	line-height: 140px;
+	float: left;
+	padding: 20px;
+	font-size: 24px;
+	font-weight: 300;
+	color: grey;
+	
+}
+
+#left a:hover{
+	color: #FFA07A;
+}
+
+#left {
+	padding-left: 100px;
+	padding-right: 0px;
+}
+
+#right a{
+	line-height: 140px;
+	float: right;
+	padding: 20px;
+	font-size: 24px;
+	font-weight: 300;
+	color: grey;
+
+}
+
+#right a:hover{
+	color: #FFA07A;
+}
+
+#right{
+	padding-right: 100px;
+	padding-left: 0px;
+}
+
+
+label{
+	display: none;
+}
+
+input{
+	display: none;
+}
+
+aside{
+	display: none;
+}
+
+
+#navigation{
+	height: 130px;
+	background-color: white;
+	position: -webkit-sticky;
+  	position: fixed;
+  	width: 100%;
+  	top: -1px;
+  	left: 0;
+  	text-align: center;
+  	font-size: 35px;
+  	font-weight: 600;
+  	line-height: 150px;
+
+}
+
+#navigation img{
+	float: left;
+	height: 55px;
+	padding-left: 30px;
+	padding-top: 15px;
+	margin-left: 0px;
+}
+
+
+#mainimage{
+	background-image: url('../Images/Condesa1.jpg');
+	width: 1240px;
+	height: 670px;
+	background-size: 1240px 700px;
+	background-repeat: no-repeat;
+	margin: 20px;
+}
+
+#mapimage{
+	background-image: url('../Images/atlanta-ga-skyline-PAGE-2017.jpg');
+	width: 1240px;
+	height: 670px;
+	background-size: 1280px 700;
+	background-repeat: no-repeat;
+	margin: 20px;
+}
+
+#mainimage h1{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 600px;
+	padding-top: 350px;
+	margin: 0px;
+
+}
+
+#mapimage h1{
+	color: white;
+	text-align: center;
+	font-size: 65px;
+	font-weight: 800px;
+	line-height: 700px;
+}
+
+section h1{
+	padding-top: 40px;
+	text-align: center;
+}
+
+.post label input{
+	display: inline-block;
+
+}
+
+
+.post {
+    margin:auto;
+    max-width: 800px;
+    padding: 20px 12px 10px 20px;
+    font-size: 25px;
+}
+.post li {
+    padding: 10px;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+   }
+.post label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display: block;
+    font-weight: bold;
+
+}
+ 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+.post .field-divided{
+    width: 50%;
+    height: 40px;
+
+}
+
+.post .field-long{
+    width: 100%;
+    height: 40px;
+}
+.post .field-select{
+    width: 100%;
+    height: 40px;
+}
+.post .field-textarea{
+    height: 100px;
+}
+.post input[type=submit], .form input[type=button]{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.post input[type=submit]:hover, .form input[type=button]:hover{
+    background: #4691A4;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.post .required{
+    color:#FFA07A;
+}
+}
+
+
+
+
+
+footer{
+	clear: both;
+	height:200px;
+}
+
+footer div h6 a:hover{
+	color: #FFA07A;
+}
+
+footer div h6 a{
+	float: right;
+	margin: 30px;
+	font-size: 24px;
+	font-weight: 300;
+	text-decoration: none;
+	color: black;
+}
+
+
+
+@media screen and (max-width: 480px){
+
+header div a{
+	font-size: 40px;
+}
+
+
+#navigation{
+	display: none;
+}
+
+label{
+	display: block;
+}
+
+input{
+	display: block;
+}
+
+aside{
+	display: block;
+}
+
+
+input#toggle {
+	display: none;
+}
+
+
+input#toggle + label {
+	cursor: pointer;
+	font-size: 20px;
+	border: 1px solid lightgray;
+	color: rgba(0,0,0,.4);
+	padding: 8px 10px;
+	border-radius: 5px;
+	transition: all .35s ease;
+	align-self: flex-end;
+	float: right;
+	margin-right: 30px;
+}
+
+input#toggle + label:hover {
+	color: rgba(0,0,0,.6);
+}
+
+input#toggle:checked + label {
+	color: rgba(0,0,0,.4);
+	background: rgba(0,0,0,.03);
+	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.35);
+	margin-top: 3px;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: all .25s ease;
+}
+
+input#toggle:checked ~ aside {
+	height: 350px;
+	opacity: 1;
+}
+
+aside > a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	text-decoration: none;
+	background: white;
+	transition: all .4s ease;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: rgba(0,0,0,.4);
+}
+
+aside > a:hover {
+	background: white;
+	color: #FFA07A;
+	border-left: 5px solid rgba(0,0,0,.2);
+}
+
+#navigation{
+	display: none;
+}
+
+section div {
+	float: none;
+}
+
+}
